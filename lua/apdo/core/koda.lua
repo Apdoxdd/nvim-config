@@ -42,6 +42,7 @@ function M.setup(name)
 	end
 
 	require("koda").setup({
+		transparent = true,
 		colors = variant_overrides[variant] or {},
 	})
 end

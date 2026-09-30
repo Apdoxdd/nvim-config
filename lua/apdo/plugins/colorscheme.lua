@@ -3,7 +3,7 @@ local colorschemes = require("apdo.core.colorschemes")
 return vim.tbl_map(function(item)
 	local spec = {
 		item.repo,
-		lazy = false,
+		lazy = true,
 		priority = 1000,
 	}
 
