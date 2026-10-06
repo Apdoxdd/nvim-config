@@ -40,3 +40,7 @@ keymap.set("n", "<leader>tp", "<cmd>ThemePrev<CR>", { desc = "Previous theme" })
 -- terminal related
 keymap.set("t", "<Esc>", [[<C-\><C-n>]])
 
+-- system clipboard (only these keys touch it; plain y/d/x/p stay inside nvim)
+keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Copy to system clipboard" })
+keymap.set("n", "<leader>Y", '"+Y', { desc = "Copy to end of line to system clipboard" })
+keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system clipboard" })
