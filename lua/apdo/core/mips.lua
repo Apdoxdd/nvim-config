@@ -1,6 +1,6 @@
 -- Run MIPS assembly with MARS (java -jar Mars.jar) from inside nvim.
 -- <leader>mr  save the file and run it in a terminal split (you can type input there).
-local jar = vim.fn.expand("~/dev/mars/Mars.jar")
+local jar = vim.fn.expand("~/dev/tools/mars/Mars.jar")
 
 local function run_mars()
   if vim.fn.executable("java") == 0 then
